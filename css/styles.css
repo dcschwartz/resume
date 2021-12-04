@@ -58,6 +58,7 @@ h3 {
 }
 
 .navitable td a {
+  color: #1f344a; 
   text-decoration: none;
   display:block;
   width:100%;
