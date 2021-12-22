@@ -4,12 +4,26 @@
 <head>
   <meta charset="utf-8">
   <title>Dean Schwartz's Resume</title>
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstrap Icons css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Custom css -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- Flavicon -->
   <link rel="icon" href="images/favicon.ico">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Merriweather&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
 
+  <!-- bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+  <!-- Background Image would not work from css, but did work from here >
   <style>
     body {
       margin: 0;
@@ -19,49 +33,102 @@
       background-position: center;
       background-size: cover;
     }
-  </style>
+  </style -->
 </head>
 
 <body>
-  <div class="sidenav">
-    <table class="navitable">
-      <tr>
-        <td><a href="#top"><strong>Top</strong></a></td>
-      </tr>
-      <tr>
-        <td><a href="#aboutme"><strong>About Me</strong></a></td>
-      </tr>
-      <tr>
-        <td><a href="#skills"><strong>Skills</strong></a></td>
-      </tr>
-      <tr>
-        <td><a href="#favouriteprojects"><strong>Favourite Projects</strong></a></td>
-      </tr>
-      <tr>
-        <td><a href="#personaldevelopment"><strong>Personal Development</strong></a></td>
-      </tr>
-      <tr>
-        <td><a href="#workexperience"><strong>Experience</strong></a></td>
-      </tr>
-    </table>
-  </div>
+  <!-- To Use Later -->
+  <!-- Bootstrap Icons stars css -->
+  <!-- i class="bi bi-star"></i -->
+  <!-- i class="bi bi-star-fill"></i -->
 
-  <div class="mainbody">
+  <div class="fixedNavBar fixed-top">
+  <section class="navigation-section" id="navigation">
 
-    <div class="top-envelope">
-      <div class="top" id="top">
-        <div class="photo">
-          <img class="roundphoto" src="images/DeanSuit.png" alt="Dean Schwartz">
+    <div class="container-fluid" id="navbarTopLevel">
+
+      <!-- Nav Bar -->
+
+      <!--div class="sidenav">
+        <table class="navitable">
+          <tr>
+            <td><a href="#top"><strong>Top</strong></a></td>
+          </tr>
+          <tr>
+            <td><a href="#aboutme"><strong>About Me</strong></a></td>
+          </tr>
+          <tr>
+            <td><a href="#skills"><strong>Skills</strong></a></td>
+          </tr>
+          <tr>
+            <td><a href="#favouriteprojects"><strong>Favourite Projects</strong></a></td>
+          </tr>
+          <tr>
+            <td><a href="#personaldevelopment"><strong>Personal Development</strong></a></td>
+          </tr>
+          <tr>
+            <td><a href="#workexperience"><strong>Experience</strong></a></td>
+          </tr>
+        </table>
+      </div  -->
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        <a class="navbar-brand" href="">Resume</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerMenu">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-normal" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-normal" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-normal" href="#favouriteprojects">Favourite Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-normal" href="#personaldevelopment">Personal Development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark font-weight-normal" href="#workexperience">Work Experience</a>
+            </li>
+          </ul>
+
         </div>
-        <div class="title">
+      </nav>
+    </div>
+  </section>
+
+</div>
+
+  <!-- Title -->
+  <section class="blue-section" id="title">
+
+      <div class="row">
+
+        <div class="col-lg-12 photo d-flex justify-content-center">
+            <img class="roundphoto" src="images/DeanSuit.png" alt="Dean Schwartz">
+        </div>
+
+        <div class="col-lg-12 title">
           <h1>I'm Dean Schwartz</h1>
           <h2 class="subtitle">An Experienced Oracle Developer</h2>
         </div>
       </div>
-    </div>
+      <br class="navbreak" id="aboutme"/>
+  </section>
 
+
+  <div class="mainbody">
+    <section class="lightblue-section" id="aboutme-section">
     <div class="aboutme-envelope">
-      <div class="aboutme" id="aboutme">
+      <div class="aboutme">
         <h2>About Me:</h2>
         <p>
           Professional Software Engineer with 23+ years of Oracle Forms, Reports and PL/SQL experience, and over 9 years (2+ years then 7 years continuous) of Oracle Retail (v10 – v14) Experience in RMS, RPM, ReSA, Allocations, RIB and SIM, with extensive experience in the software development life cycle from Analysis and Design, through Development, Testing, Implementation and Support.
@@ -70,8 +137,11 @@
         </p>
       </div>
     </div>
+    <br class="navbreak" id="skills"/>
+    </section>
+    <section class="blue-section" id="skills-section">
     <div class="skills-envelope">
-      <div class="skills" id="skills">
+      <div class="skills">
         <h2>Skills:</h2>
         <p>
           23 Years of experience with Oracle Forms (4.5 through 11g), Oracle Reports (4.5 through 11g) and PL/SQL.
@@ -84,9 +154,11 @@
         </p>
       </div>
     </div>
-
+    <br class="navbreak" id="favouriteprojects"/>
+    </section>
+    <section class="lightblue-section" id="favouriteprojects-section">
     <div class="favouriteprojects-envelope">
-      <div class="favouriteprojects" id="favouriteprojects">
+      <div class="favouriteprojects">
         <h2>Favourite Projects:</h2>
         <h3>Bus ticket sales and coupon system:</h3>
         <p>This was the first full project I'd ever worked on by myself. I went in with a salesman and sold my services and I did all the rest.
@@ -106,9 +178,11 @@
         </p>
       </div>
     </div>
-
+    <br class="navbreak" id="personaldevelopment"/>
+    </section>
+    <section class="blue-section" id="personaldevelopment-section">
     <div class="personaldevelopment-envelope">
-      <div class="personaldevelopment" id="personaldevelopment">
+      <div class="personaldevelopment">
         <h2>Personal Development:</h2>
         <h3>Articifical Intelligence:</h3>
         <p>
@@ -119,9 +193,11 @@
         </p>
       </div>
     </div>
-
+    <br class="navbreak" id="workexperience"/>
+    </section>
+    <section class="lightblue-section" id="workexperience-section">
     <div class="workexperience-envelope">
-      <div class="workexperience" id="workexperience">
+      <div class="workexperience">
         <p>
         <h2>Work Experience:</h2>
           Senior Oracle Consultant • Essent Guaranty
@@ -134,10 +210,10 @@
         </p>
       </div>
     </div>
-
+    </section>
   </div>
 
-  <div>
+  <section class="footer-section" id="footer-section">
     <div class="bottom-container">
       <div class="bottom">
         <table class="center">
@@ -165,7 +241,7 @@
       </div>
     </div>
 
-  </div>
+  </section>
 
 </body>
 
