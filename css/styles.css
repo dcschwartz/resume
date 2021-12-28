@@ -174,8 +174,8 @@ body {
 body {
   padding-left: 0;
   padding-right: 0;
-  background-image: none
-  background-color: rgba(222,242,241, 1)
+  background-image: none;
+  background-color: rgba(222,242,241, 1);
 }
 
 .fixedNavBar {
