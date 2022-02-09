@@ -363,3 +363,12 @@ ul.no-bullets {
 #fourth-row {
   padding: 0;
 }
+
+
+/* Increase all font sizes on mobile */
+@media (max-width: 767px) {
+  html {
+    /* default is 1rem or 16px */
+    font-size: 25px;
+  }
+}
