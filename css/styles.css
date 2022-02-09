@@ -368,7 +368,7 @@ ul.no-bullets {
 @media (min-width: 768px) and (max-width: 992px) {
   html {
     /* default is 1rem or 16px */
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
