@@ -364,6 +364,13 @@ ul.no-bullets {
   padding: 0;
 }
 
+/* Increase all font sizes on mobile */
+@media (min-width: 768px) and (max-width: 992px) {
+  html {
+    /* default is 1rem or 16px */
+    font-size: 20px;
+  }
+}
 
 /* Increase all font sizes on mobile */
 @media (max-width: 767px) {
