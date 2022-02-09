@@ -5,54 +5,92 @@ font-family: 'Roboto', sans-serif;
 
 body {
   margin: 0;
-  background-image: url("../images/MountainBackground5.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
   font-family: 'Roboto', serif;
-  font-size: 1rem;
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "DM Serif Display", serif;
-}
 
+h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', serif;
+}
 
 h1 {
-  font-size: 4.24rem;
+  font-family: "DM Serif Display", serif;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0.62rem;
 }
 
 h2 {
-  font-size: 2.62rem;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0.62rem;
 }
 
 h3 {
-  font-size: 1.62rem;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0.62rem;
+}
+
+
+h4 {
+  text-align: left;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.timeline-header {
+  /* border-top: 2px dashed #0288d1; */
+  /* border-bottom: 2px dashed #0288d1; */
+  border: none;
+}
+
+#skillsdiv ul > li .skill-title {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+}
+
+#skillsdiv ul > li .skill-score {
+  float: right;
+}
+
+
+#skillskey h5 {
+  text-align: center;
+}
+
+#skillskey {
+  text-align: left;
+}
+
+#skillskey ul > li .skill-key {
+  float: right;
 }
 
 .photo {
   margin: 0;
   align-items: center;
   margin: 2rem 0 2rem 0;
-  padding-top: 3rem;
 }
 
 .roundphoto {
   border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   border: 5px solid #AAAAAA;
 }
+
+/*
+#title {
+  padding: 5% 0 5% 0;
+}
+*/
 
 .title {
   text-align: center;
@@ -62,11 +100,15 @@ h3 {
   font-family: 'Roboto', sans-serif;
 }
 
+.sub-subtitle {
+  font-family: 'Roboto', sans-serif;
+}
 
 #navigation {
-  /* background-color: #1f344a; */
-  background: rgba(170, 170, 170, 1);
+  /* background: rgba(1,114,194,0.75); */
+  background: #043c8c;  /* rgba(1,29,69,1.00); */
 }
+
 
 .nav-item a {
   color: #1f344a;
@@ -81,16 +123,51 @@ h3 {
   padding: 0;
 }
 
+/* .white-section {
+  margin: 0;
+  padding: 2rem 2rem 1rem 2rem;
+  background: white;
+}
+*/
+
+.white-section {
+  margin: 0;
+  padding: 2rem 2rem 1rem 2rem;
+  /*  background: rgba(237,243,251, 1); */
+  background: ghostwhite;
+}
+
+
 .lightblue-section {
   margin: 0;
   padding: 2rem 2rem 1rem 2rem;
-  background: rgba(222,242,241, 0.5);
+  /* background: rgba(114,185,242, 0.75);
+  background: rgba(202,223,254,1.00);
+  background: rgba(218,233,254,1.00); */
+  background: rgba(171,204,253, 1);
+
+}
+
+.lightlightblue-section {
+  margin: 0;
+  padding: 2rem 2rem 1rem 2rem;
+  /* background: rgba(114,185,242, 0.75);
+  background: rgba(202,223,254,1.00);*/
+  /* background: rgba(227,238,254,0.75); */
+  background: rgba(179,209,253, 0.75);
 }
 
 .blue-section {
   margin: 0;
   padding: 2rem 2rem 1rem 2rem;
-  background: rgba(119, 161, 215, 0.5);
+  /* background: rgba(1,114,194,0.75); */
+  background: rgba(171,204,253, 1);
+}
+
+.darkblue-section {
+  margin: 0;
+  padding: 0 2rem 0 2rem;
+  background: rgba(1,29,69,1.00);
 }
 
 
@@ -102,9 +179,8 @@ h3 {
 .copyright {
   margin-top: 1rem;
   font-family: 'Roboto', sans-serif;
-  font-size:  (62% + 1vw + 1vh);
   text-align: center;
-  color: #1f344a;
+/* color: #1f344a; */
 }
 
 .copyright p {
@@ -115,7 +191,15 @@ h3 {
 .footer-link {
   text-decoration: none;
   text-align: left;
-  color: #1f344a;
+  /* color: #1f344a; */
+}
+
+.footer-link {
+  color: white;
+}
+
+.footer-link:visited {
+  color: white;
 }
 
 .linkedin {
@@ -133,54 +217,149 @@ h3 {
 
 .bottom {
   padding: 2rem 2rem 2rem 2rem;
-  background: rgba(170, 170, 170, 1);
+  /*  background: rgba(170, 170, 170, 1); */
+  background: #043c8c;  /* rgba(1,29,69,1.00); */
+  color: white;
+}
+
+.navigation-fluid{
+  padding: 0 3% 0 3%;
+}
+
+.nav-link {
+  margin: 0 1rem;
+}
+
+.container-fluid{
+  padding: 0 10% 2% 10%;
+}
+
+#myaboutme {
+  position: relative;
 }
 
 
-
-@media (min-width: 1200px) {
-
-body {
-  padding-left: 15%;
-  padding-right: 15%;
+.aboutme-title {
+  font-size: 1.5rem;
 }
 
-.fixedNavBar {
-  padding-left: 15%;
-  padding-right: 15%;
+.aboutme-box {
+  padding: 4.5%;
 }
 
+.icon {
+  color: #043c8c;  /* #77a1d7; */
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
-
-body {
-  padding-left: 10%;
-  padding-right: 10%;
-  background-image: url("../images/MountainBackground6.png");
-  background-position: top left;
+.icon:hover {
+  color: #0e60a1;
 }
 
-.fixedNavBar {
-  padding-left: 10%;
-  padding-right: 10%;
+.skills {
+  padding: 10%;
+  text-align: left;
+  box-sizing: border-box;
 }
 
+.skills-center {
+  text-align: center;
 }
 
+.skills-left {
+  display: inline-block;
+  width: 60%;
+  box-sizing: border-box;
+}
 
-@media (max-width: 900px) {
+.skills-right {
+  float: right;
+  text-align: right;
+  box-sizing: border-box;
+}
 
-body {
+.favourites-images{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.favourites-text{
+   padding-left: 5%;
+   padding-right: 5%;
+   padding-top: 1rem;
+}
+
+/*
+.favourites-text h2{
+  font-size:2vw;
+}
+
+.favourites-text h4{
+  font-size:1.5vw;
+}
+
+*/
+
+.favourites-details {
+  text-align: center;
+}
+
+.align-middle{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#favouriteprojects {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#workexperience {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#skills {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#myfavouriteprojects {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  background-image: none;
-  background-color: rgba(222,242,241, 1);
 }
 
-.fixedNavBar {
-  padding-left: 0;
-  padding-right: 0;
+#favourite-projects {
+  margin-left: 5%;
+  margin-right:5%;
+  padding-bottom: 2rem;
 }
 
+#myworkexperience {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fa-star {
+  color: #d4af37;
+}
+
+#first-row {
+  padding: 0;
+}
+
+#second-row {
+  padding: 0;
+}
+
+#third-row {
+  padding: 0;
+}
+
+#fourth-row {
+  padding: 0;
 }
