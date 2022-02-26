@@ -352,6 +352,15 @@ ul.no-bullets {
   color: #d4af37;
 }
 
+.key-title {
+  font-size: 0.9em;
+}
+
+.skill-key {
+  font-size: 0.9em;
+}
+
+
 #first-row {
   padding: 0;
 }
