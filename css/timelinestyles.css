@@ -166,10 +166,10 @@
     transform: translateX(-50%);
 }
 .timeline h3 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 .timeline p {
-    font-size: 14px;
+    font-size: 25px;
 }
 .timeline-image {
     position: absolute;
