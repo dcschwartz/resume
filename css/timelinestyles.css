@@ -144,11 +144,12 @@
 }
 /*small device style*/
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .timeline-nodes:nth-child(odd) h3,
     .timeline-nodes:nth-child(odd) p {
     text-align: left
 }
+
 .timeline-nodes:nth-child(even) {
     flex-direction: row;
 }
@@ -199,7 +200,7 @@
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
-.timeline-nodes:nth-child(even) .timeline-date {
+.timeline-nodes:nth-child(even) .timeline-date h4{
     text-align: left;
 }
 .timeline-image::before {
@@ -210,7 +211,7 @@
 }
 
 /*extra small device style */
-@media (max-width: 575px) {
+@media (max-width: 992px) {
     .timeline::before {
     content: "";
     display: block;
