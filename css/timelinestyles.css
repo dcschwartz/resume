@@ -144,7 +144,7 @@
 }
 /*small device style*/
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .timeline-nodes:nth-child(odd) h3,
     .timeline-nodes:nth-child(odd) p {
     text-align: left
@@ -211,7 +211,7 @@
 }
 
 /*extra small device style */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .timeline::before {
     content: "";
     display: block;
